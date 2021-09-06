@@ -1,0 +1,22 @@
+{
+  "name": "thakur_bin",
+  "version": "1.0.0",
+  "description": "Send Message Secretly With Link",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Nikhil Thakur",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}
