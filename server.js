@@ -14,7 +14,7 @@ const Document = require("./models/Document")
 // const mongoose = require('mongoose')
 // const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/nik_bin';
 
-
+// DATABASE_URL=mongodb://localhost/thakurbin
 const mongoose = require('mongoose')
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
@@ -73,7 +73,7 @@ app.get('/:id', async (req, res) => {
 
         res.render('code-display', { code: document.value, id })
     } catch (e) {
-        res.redirect('/')
+        res.redirect("/")
     }
 })
 // app.listen(3000)
