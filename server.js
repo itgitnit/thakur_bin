@@ -15,8 +15,9 @@ const Document = require("./models/Document")
 // const CONNECTION_URI = process.env.MONGODB_URI || 'mongodb://localhost/nik_bin';
 
 // DATABASE_URL=mongodb://localhost/thakurbin
+const DATABASE_URL = 'mongodb + srv://thakur:mdL19FbKU3kTt9Xo@cluster0.3nmem.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const mongoose = require('mongoose')
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
